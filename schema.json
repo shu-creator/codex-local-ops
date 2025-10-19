@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LocalOps Extract Output",
+  "type": "object",
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "detail"],
+        "properties": {
+          "category": { "type": "string", "enum": ["配慮", "航空", "OP", "その他"] },
+          "subcategory": { "type": "string" },
+          "detail": { "type": "string", "minLength": 1 },
+          "date": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
