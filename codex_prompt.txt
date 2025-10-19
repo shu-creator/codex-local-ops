@@ -1,0 +1,4 @@
+{INPUT_PATH} を読み、policy.md の基準で抽出。
+schema.json に厳密適合する単一のJSONのみ返す（説明・コードブロック禁止）。
+座席希望は除外。機内食は {category:"航空", subcategory:"機内食"}。搭乗支援は {category:"航空", subcategory:"搭乗支援"}。
+出力例: {"items":[{...}]}
