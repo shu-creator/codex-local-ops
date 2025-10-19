@@ -1,0 +1,2 @@
+{ACTUAL_JSON} と tests/{EXPECTED} を比較し、差分のみを簡潔に列挙せよ。
+出力は「added: … / removed: … / changed: …」の3行以内。無ければ「no diff」。
